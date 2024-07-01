@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeHub</title>
+
+  <link rel="stylesheet" href="../styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires :</p>
+
+            <p class="helpline-number">+01123456790</p>
+          </div>
+
+        </a>
+
+        <a href="#" class="logo">
+          <img src="../assets/images/logo.svg" alt="HomeHub logo">
+        </a>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.svg" alt="HomeHub logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="../index.html#home" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li>
+              <a href="../index.html#aboutUs" class="navbar-link" data-nav-link>aboutus</a>
+            </li>
+
+            <li>
+              <a href="../index.html#gallery" class="navbar-link" data-nav-link>gallery</a>
+            </li>
+
+            <li>
+              <a href="../pages/search.html" class="navbar-link" data-nav-link>Search</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+
+  <main>
+    <script src="../scripts.js"></script>
+    <article>
+      
+      <section class="property-search">
+        <div class="Search-title">
+          <h2 class="h2 section-title-search">Search Now</h2>
+        </div>
+        <div class="container">
+
+          <form action="" class="property-search-form" onsubmit="return validateForm()">
+
+            <div class="input-wrapper">
+              <label for="typeResidence" class="input-label">Type of Residence*</label>
+
+              <select name="typeResidence" id="typeResidence" placeholder="residence type" class="input-field">
+                <option value="">Select Type</option>
+                <option value="House">House</option>
+                <option value="Flat">Flat</option>
+                <option value="Apartment">Apartment</option>
+                <option value="Any">Any</option>
+              </select>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="postcode" class="input-label">Post Code*</label>
+
+              <input type="text" name="postcode" id="postcode" placeholder="Postcode address" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="dateAdded" class="input-label">Date Added</label>
+
+              <select name="dateAdded" id="dateAdded" placeholder="date added" class="input-field">
+                <option value="">Select Type</option>
+                <option value="Anytime">Anytime</option>
+                <option value="H24">Last 24 Hours</option>
+                <option value="D3">Last 3 Days</option>
+                <option value="D7">Last 7 Days</option>
+                <option value="D14">Last 14 Days</option>
+              </select>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="minPrice" class="input-label">Min Price</label>
+              <input type="number" name="minPrice" id="minPrice" placeholder="Min Price" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="maxPrice" class="input-label">Max Price</label>
+              <input type="number" name="maxPrice" id="maxPrice" placeholder="Max Price" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="minBedRoom" class="input-label">Min Bed Room*</label>
+              <input type="number" name="minBedRoom" id="minBedRoom" placeholder="Min BedRoom" class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="maxBedRoom" class="input-label">Max Bed Room*</label>
+              <input type="number" name="maxBedRoom" id="maxBedRoom" placeholder="Max Bed Room" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Inquire now</button>
+
+          </form>
+
+        </div>
+      </section>
+
+      <!-- Package -->
+
+      <section class="package" id="package">
+        <div class="container">
+
+          <p class="section-subtitle">Popular Packeges</p>
+
+          <h2 class="h2 section-title">Checkout Our Packeges</h2>
+
+          <p class="section-text">
+            Our packages offers multiple choices according to your test, affordability anc convenience.
+          </p>
+
+          <ul class="package-list">
+
+            <li>
+              <div class="package-card">
+                <figure class="card-banner">
+                  <img src="[Image URL]" alt="[Description of the property]">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">[Property Type] in [Location]</h3>
+                  <p class="card-text">[Shortened Description]</p>
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="bed"></ion-icon>
+                        <p class="text">[Bedrooms]</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="cash"></ion-icon>
+                        <p class="text">$[Price]</p>
+                      </div>
+                    </li>
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="home"></ion-icon>
+                        <p class="text">[Tenure]</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+            </li>
+
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="favourites" id="favourites">
+        <h2 class="h2 section-title">Favourite List</h2>
+        <p id="favorites-container"></p>
+      </section>
+
+    </article>
+  </main>
+
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="../assets/images/logo.svg" alt="HomeHub logo">
+          </a>
+
+          <p class="footer-text">
+            Choose HomeHub and experience the difference that our expertise, personalized approach, and commitment to
+            excellence can make in your property transactions.
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+            Feel free to contact and reach us !!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+01123456790" class="contact-link">+01123456790</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.HomeHub.com" class="contact-link">info.homehub.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>123, 7th Street, Colombo</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="">HomeHub</a>. All rights reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="../scripts.js"></script>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script type="application/json" id="json-data">
+    {
+        "properties": [
+              {
+                  "id":"prop1",
+            "type":"House",
+                  "bedrooms":3,
+            "price":750000,
+            "tenure":"Freehold",
+            "description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
+            "location":"Petts Wood Road, Petts Wood, Orpington",
+            "picture":"../assets/images/property1/1.jpg",
+            "url":"../properties/prop1.html",
+                  "added": {
+                      "month":"October",
+                      "day":12,
+                      "year":2022
+                  }
+              },
+          {
+                  "id":"prop2",
+            "type":"Flat",
+                  "bedrooms":2,
+            "price":399995,
+            "tenure":"Freehold",
+            "description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+            "location":"Crofton Road Orpington BR6",
+            "picture":"../assets/images/property2/1.jpg",
+            "url":"../properties/prop2.html",
+                  "added": {
+                      "month":"September",
+                      "day":14,
+                      "year":2022
+                  }
+              },
+      
+              {
+                  "id": "prop3",
+                  "type": "Apartment",
+                  "bedrooms": 1,
+                  "price": 250000,
+                  "tenure": "Leasehold",
+                  "description": "A stylish and contemporary one bedroom apartment located in the heart of the city. This property features an open-plan living area, modern kitchen with integrated appliances, a spacious bedroom, and a sleek bathroom. Residents also benefit from access to a communal rooftop terrace with panoramic city views. Conveniently situated close to shops, restaurants, and public transport links.",
+                  "location": "City Centre, London",
+                  "picture": "../assets/images/property3/1.jpg",
+                  "url": "../properties/prop3.html",
+                  "added": {
+                      "month": "November",
+                      "day": 8,
+                      "year": 2022
+                  }
+              },
+      
+              {
+                  "id": "prop4",
+                  "type": "House",
+                  "bedrooms": 2,
+                  "price": 580000,
+                  "tenure": "Freehold",
+                  "description": "A charming four bedroom bungalow nestled in a tranquil countryside setting. This property offers spacious accommodation including a large living room, separate dining area, fully-fitted kitchen, four well-proportioned bedrooms, and two bathrooms. Outside, there is a private garden with picturesque views and ample off-road parking. Perfect for those seeking a peaceful retreat while still being within easy reach of local amenities.",
+                  "location": "Rural Lane, Countryside Village",
+                  "picture": "../assets/images/property4/1.jpg",
+                  "url": "../properties/prop4.html",
+                  "added": {
+                      "month": "January",
+                      "day": 22,
+                      "year": 2023
+                  }
+              },
+      
+              {
+                  "id": "prop5",
+                  "type": "Apartment",
+                  "bedrooms": 3,
+                  "price": 680000,
+                  "tenure": "Freehold",
+                  "description": "A stunning three bedroom townhouse located in a sought-after residential area. This property boasts a contemporary design with spacious living accommodation spread over three floors. Features include a modern kitchen/dining area, bright and airy reception room, three double bedrooms (including a master with en-suite), family bathroom, and a private garden. Situated within walking distance of local schools, parks, and transport links.",
+                  "location": "Park Avenue, Suburbia Town",
+                  "picture": "../assets/images/property5/1.jpg",
+                  "url": "../properties/prop5.html",
+                  "added": {
+                      "month": "March",
+                      "day": 17,
+                      "year": 2023
+                  }
+              },
+      
+              {
+                  "id": "prop6",
+                  "type": "Flat",
+                  "bedrooms": 2,
+                  "price": 320000,
+                  "tenure": "Freehold",
+                  "description": "A charming two bedroom cottage situated in a picturesque village setting. This characterful property features exposed beams, an open fireplace, and period details throughout. Accommodation comprises a cozy living room, country-style kitchen, two bedrooms, and a family bathroom. Outside, there is a delightful cottage garden with mature plants and a seating area, perfect for enjoying the tranquil surroundings.",
+                  "location": "Village Lane, Charming Village",
+                  "picture": "../assets/images/property6/1.jpg",
+                  "url": "../properties/prop6.html",
+                  "added": {
+                      "month": "May",
+                      "day": 5,
+                      "year": 2023
+                  }
+              },
+              
+              {
+                  "id": "prop7",
+                  "type": "Penthouse",
+                  "bedrooms": 3,
+                  "price": 1500000,
+                  "tenure": "Leasehold",
+                  "description": "An exquisite three bedroom penthouse offering luxurious living in a prestigious city location. This property features spacious and elegantly designed interiors, including a grand reception room, gourmet kitchen, three bedrooms (all with en-suite bathrooms), and a private terrace with stunning city skyline views. Residents also benefit from concierge service, underground parking, and access to exclusive leisure facilities.",
+                  "location": "Luxury Square, City Centre",
+                  "picture": "../assets/images/property7/1.jpg",
+                  "url": "../properties/prop7.html",
+                  "added": {
+                      "month": "July",
+                      "day": 10,
+                      "year": 2023
+                  }
+              }
+              
+              
+              
+      ]}  
+  </script>
+
+  <script>
+    const jsonData = document.getElementById("json-data").textContent;
+    const jsonObject = JSON.parse(jsonData);
+    const properties = jsonObject.properties;
+
+
+    // const filteredProperties = jsonObject.properties.filter(property => property.id !== packageToRemoveId);
+
+    properties.forEach(property => {
+      const cardTemplate = document.querySelector(".package-card").cloneNode(true); // Clone the template
+
+      // Update elements with property data
+      cardTemplate.querySelector(".card-banner img").src = property.picture;
+      cardTemplate.querySelector(".card-title").textContent = `${property.type} in ${property.location}`;
+      cardTemplate.querySelector(".card-text").textContent = property.description.slice(0, 100) + "...";
+      cardTemplate.querySelector(".card-meta-item:nth-child(1) .text").textContent = property.bedrooms;
+      cardTemplate.querySelector(".card-meta-item:nth-child(2) .text").textContent = `$${property.price}`;
+      cardTemplate.querySelector(".card-meta-item:nth-child(3) .text").textContent = property.tenure;
+
+      // Create a button element
+      const button = document.createElement("button");
+      button.className = "btn-property-search";
+      button.textContent = "Search Now";
+      // Set the URL for the button
+      button.onclick = function () {
+        window.open(property.url, '_blank');
+      };
+
+      // Append the button to the card template
+      cardTemplate.appendChild(button);
+
+      const packageList = document.querySelector(".package-list");
+      packageList.appendChild(cardTemplate); // Add card to package list
+
+    });
+    const template = document.querySelector(".package-card");
+    template.parentNode.removeChild(template);
+
+    function getPropertyDetails(propertyId) {
+      var jsonData = JSON.parse(document.getElementById('json-data').textContent);
+      return jsonData.properties.find(function (prop) {
+        return prop.id === propertyId;
+      });
+    }
+  </script>
+
+  <script>
+    var favall = [];
+
+    // Retrieve values from localStorage or other sources (replace with your logic)
+    var savedValue1 = localStorage.getItem("toggleValue1");
+    var savedValue2 = localStorage.getItem("toggleValue2");
+    var savedValue3 = localStorage.getItem("toggleValue3");
+    var savedValue4 = localStorage.getItem("toggleValue4");
+    var savedValue5 = localStorage.getItem("toggleValue5");
+    var savedValue6 = localStorage.getItem("toggleValue6");
+    var savedValue7 = localStorage.getItem("toggleValue7");
+
+    // ... (repeat for savedValue3 to savedValue7)
+
+    // Update favall array with retrieved values, ensuring correct indexing
+    for (var i = 1; i <= 7; i++) {
+      var savedValue = localStorage.getItem("toggleValue" + i);
+      favall[i - 1] = savedValue || 0; // Use 0 as default if value is missing
+    }
+
+    // Create elements and display favorites
+    function createFavoriteElements() {
+      document.getElementById("favorites-container").innerHTML = ""; // Clear existing content
+
+      // Create delete icon at the top
+      var deleteIconTop = document.createElement("span");
+      deleteIconTop.classList.add("delete-icon");
+      deleteIconTop.textContent = "🗑️"; // Delete icon using Unicode character
+
+      // Event listener for delete icon at the top
+      deleteIconTop.addEventListener("click", function () {
+        // Mark all items as not favorite
+        for (var j = 0; j < favall.length; j++) {
+          favall[j] = 0;
+        }
+
+        for (var i = 1; i <= 7; i++) {
+        localStorage.setItem("toggleValue" + i, 0);
+    }
+
+        // Remove all favorite items from the DOM
+        var container = document.getElementById("favorites-container");
+        while (container.firstChild) {
+          container.removeChild(container.firstChild);
+        }
+      });
+
+      // Append delete icon at the top
+      document.getElementById("favorites-container").appendChild(deleteIconTop);
+
+      for (var i = 0; i < favall.length; i++) {
+        if (favall[i] == 1) {
+          var favoriteItem = document.createElement("div");
+          favoriteItem.classList.add("favorite-item");
+
+          var image = document.createElement("img");
+          image.src = `../assets/images/property${i + 1}/1.jpg`; // Replace with actual image source logic
+          image.classList.add("favorite-image");
+          favoriteItem.appendChild(image);
+
+          var contentDiv = document.createElement("div");
+          contentDiv.classList.add("favorite-content");
+
+          var paragraph = document.createElement("p");
+          paragraph.textContent = `🤍 Property ${i + 1}`;
+          contentDiv.appendChild(paragraph);
+
+          var link = document.createElement("a");
+          link.href = `../properties/prop${i + 1}.html`; // Replace with actual URL
+          link.textContent = "Click here for more detials";
+          contentDiv.appendChild(link);
+
+
+          favoriteItem.appendChild(contentDiv);
+
+          document.getElementById("favorites-container").appendChild(favoriteItem);
+        }
+      }
+    }
+
+    // Call the function initially to display favorites
+    createFavoriteElements();
+
+  </script>
+
+
+
+</body>
+
+</html>

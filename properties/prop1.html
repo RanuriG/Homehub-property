@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeHub</title>
+
+  <link rel="stylesheet" href="../styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires :</p>
+
+            <p class="helpline-number">+01123456790</p>
+          </div>
+
+        </a>
+
+        <a href="#" class="logo">
+          <img src="../assets/images/logo.svg" alt="HomeHub logo">
+        </a>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.svg" alt="HomeHub logo">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="../index.html#home" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li>
+              <a href="../index.html#aboutUs" class="navbar-link" data-nav-link>aboutus</a>
+            </li>
+
+            <li>
+              <a href="../index.html#gallery" class="navbar-link" data-nav-link>gallery</a>
+            </li>
+
+            <li>
+              <a href="../pages/search.html" class="navbar-link" data-nav-link>Search</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+      </div>
+    </div>
+
+  </header>
+
+
+  <main>
+    <script src="../scripts.js"></script>
+    <article>
+      <div class="prop-page-container">
+        <div class="prop-page-image-container">
+          <div class="row">
+            <div class="column">
+              <img src="../assets/images/property1/1.jpg" alt="Image 1" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="../assets/images/property1/2.jpg" alt="Image 2" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="../assets/images/property1/3.jpg" alt="Image 3" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="../assets/images/property1/4.jpg" alt="Image 4" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="../assets/images/property1/5.jpg" alt="Image5" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="../assets/images/property1/6.jpg" alt="Image 6" onclick="myFunction(this);">
+            </div>
+          </div>
+          <!-- Expanded image -->
+          <img id="expandedImg" style="width:100%">
+          <!-- Image text -->
+          <div id="imgtext"></div>
+        </div>
+        <div class="prop-page-details-container">
+          <div class="icon" id="toggleIcon">
+            <ion-icon name="heart-outline" size="large"></ion-icon>
+          </div>
+          <div class="prop-page-detail-item">
+            <ion-icon name="location-outline"></ion-icon>
+            <span id="location"></span>
+          </div>
+          <div class="prop-page-detail-item">
+            <ion-icon name="pricetag-outline"></ion-icon>
+            <span id="price"></span>
+          </div>
+          <div class="prop-page-detail-item">
+            <ion-icon name="bed-outline"></ion-icon>
+            <span id="bedrooms"></span>
+          </div>
+          <div class="prop-page-detail-item">
+            <ion-icon name="home-outline"></ion-icon>
+            <span id="type"></span>
+          </div>
+          <div class="prop-page-detail-item">
+            <ion-icon name="calendar-outline"></ion-icon>
+            <span id="tenure"></span>
+          </div>
+          <div class="prop-page-description">
+            <p id="description"></p>
+          </div>
+          <div class="prop-page-detail-item">
+            <ion-icon name="calendar-outline"></ion-icon>
+            <span id="addedDate"></span>
+          </div>
+        </div>
+      </div>
+
+      <script id="json-data" type="application/json">
+        {
+            "properties": [
+                {
+                    "id": "prop1",
+                    "type": "House",
+                    "bedrooms": 3,
+                    "price": 750000,
+                    "tenure": "Freehold",
+                    "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
+                    "location": "Petts Wood Road, Petts Wood, Orpington",
+                    "picture": "../assets/images/property1/1.jpg",
+                    "url": "properties/prop1.html",
+                    "added": {
+                        "month": "October",
+                        "day": 12,
+                        "year": 2022
+                    }
+                }
+            ]
+        }
+    </script>
+
+      <script>
+        function myFunction(imgs) {
+          var expandImg = document.getElementById("expandedImg");
+          var imgText = document.getElementById("imgtext");
+          expandImg.src = imgs.src;
+          imgText.innerHTML = imgs.alt;
+          expandImg.parentElement.style.display = "block";
+        }
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+          const propId = "prop1"; 
+          const jsonData = JSON.parse(document.getElementById("json-data").textContent);
+          const targetProperty = jsonData.properties.find(property => property.id === propId);
+
+          if (targetProperty) {
+            document.getElementById("location").textContent = targetProperty.location;
+            document.getElementById("price").textContent = `$${targetProperty.price}`;
+            document.getElementById("bedrooms").textContent = targetProperty.bedrooms;
+            document.getElementById("type").textContent = targetProperty.type;
+            document.getElementById("tenure").textContent = targetProperty.tenure;
+            document.getElementById("description").textContent = targetProperty.description;
+
+            const addedDate = new Date(`${targetProperty.added.month} ${targetProperty.added.day}, ${targetProperty.added.year}`);
+            document.getElementById("addedDate").textContent = `Added Date: ${addedDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}`;
+
+          } else {
+            console.error("Property not found");
+          }
+        });
+
+        function toggleValue1() {
+          var icon = document.getElementById('toggleIcon');
+          var currentValue = parseInt(icon.innerText.slice(-1)); // Extract value
+          var newValue = currentValue === 0 ? 1 : 0;
+
+          icon.innerHTML = `
+      <ion-icon name="${newValue === 1 ? 'heart' : 'heart-outline'}" class="${newValue === 1 ? 'blue-heart' : ''}"></ion-icon> 
+      ${newValue}`;
+
+          // Save the new value in local storage
+          localStorage.setItem("toggleValue1", newValue);
+
+          // Update the saved value display
+          document.getElementById("savedValue1").innerText = `Saved Value: ${newValue}`;
+        }
+
+        // Add click event listener to the icon
+        document.getElementById('toggleIcon').addEventListener('click', toggleValue1);
+
+        // Retrieve the saved value from local storage on page load
+        var savedValue1 = localStorage.getItem("toggleValue1");
+        if (savedValue1) {
+          // Update icon and saved value display based on stored value
+          toggleValue1(parseInt(savedValue1)); // Simulate a click with the saved value
+        }
+        
+      </script>
+    </article>
+  </main>
+
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="../assets/images/logo.svg" alt="HomeHub logo">
+          </a>
+
+          <p class="footer-text">
+            Choose HomeHub and experience the difference that our expertise, personalized approach, and commitment to
+            excellence can make in your property transactions.
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+            Feel free to contact and reach us !!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+01123456790" class="contact-link">+01123456790</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.HomeHub.com" class="contact-link">info.homehub.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>123, 7th Street, Colombo</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="">HomeHub</a>. All rights reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+  <script src="../scripts.js"></script>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+</body>
+
+</html>
